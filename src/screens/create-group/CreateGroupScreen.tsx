@@ -120,7 +120,7 @@ function CreateGroupScreen({route}) {
                 }}
                 value={total}
                 onChangeText={(formatted, raw) => {
-                    setTotal(raw);
+                    setTotal(raw || formatted);
                 }}
                 keyboardType="numeric"
             />
